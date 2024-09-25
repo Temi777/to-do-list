@@ -24,17 +24,17 @@ const Dropdown = () => {
   const dropdownOptions = [
     {
       id: 1,
-      label: "urgent",
+      label: "IMPORTANT!! ",
       value: "urgent"
     },
     {
       id: 2,
-      label: "a little urgent",
+      label: "Kind of Important ",
       value: "a-bit-urgent"
     },
     {
       id: 3,
-      label: "not urgent",
+      label: "Not Important ",
       value: "not-urgent"
     }
   ];
