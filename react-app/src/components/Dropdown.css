@@ -1,0 +1,63 @@
+.display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.dropdown .options {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  z-index: 100;
+}
+
+.dropdown .options.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown .toggle,
+.dropdown .options button {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  padding: 5px 10px;
+  border: 1px solid grey;
+  background-color: lightgrey;
+  transition: background-color 0.05s ease;
+  cursor: pointer;
+}
+
+.dropdown .options button {
+  border-top: 0;
+}
+
+.dropdown .options button.selected {
+  background-color: lightgray;
+  cursor: default;
+}
+
+.dropdown .options button:hover {
+  background-color: rgb(182, 181, 181);
+  cursor: default;
+}
+
+.dropdown .toggle:hover {
+  background-color: grey;
+}
